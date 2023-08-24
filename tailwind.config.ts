@@ -9,6 +9,9 @@ const config: Config = {
       colors: {
         myPurple: '#8257e6',
       },
+      maxWidth: {
+        myWidth: '700px',
+      }
     },
   },
   plugins: [],
