@@ -1,6 +1,7 @@
+'use client'
 import { SettingsTabs } from '@app/components/SettingTabs'
+import { Input, Select } from '@app/components/form'
 import * as FileInput from '@app/components/form/FileInput'
-import { Input } from '@app/components/form/Input'
 import { Mail } from 'lucide-react'
 
 export default function Home() {
@@ -109,7 +110,7 @@ export default function Home() {
             >
               Country
             </label>
-            <div></div>
+            <Select />
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
