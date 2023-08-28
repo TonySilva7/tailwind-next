@@ -1,3 +1,5 @@
 export * from './FileInput'
 export * from './Input'
 export * from './Select'
+export * from './Select/SelectItem'
+export * from './TextArea'
