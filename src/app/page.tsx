@@ -11,6 +11,7 @@ import {
   LogOut,
   Mail,
 } from 'lucide-react'
+import { ChangeEvent } from 'react'
 
 export default function Home() {
   return (
@@ -195,6 +196,14 @@ export default function Home() {
                 name="bio"
                 id="bio"
                 defaultValue="Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe!"
+                onSelect={(event: ChangeEvent<HTMLTextAreaElement>) =>
+                  console.log(
+                    event.target.value.substring(
+                      event.target.selectionStart,
+                      event.target.selectionEnd,
+                    ),
+                  )
+                }
               />
             </div>
           </div>
