@@ -2,11 +2,14 @@
 import { Trash2, UploadCloud } from 'lucide-react'
 import { useFileInput } from './Root'
 import { formatBytes } from '@app/utils'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
 function FileList() {
   const { files } = useFileInput()
+  const [parent] = useAutoAnimate()
+
   return (
-    <div className="mt-4 space-y-4">
+    <div ref={parent} className="mt-4 space-y-4">
       {files.map((file) => (
         <div
           key={file.name}
