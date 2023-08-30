@@ -2,15 +2,7 @@
 import { SettingsTabs } from '@app/components/SettingTabs'
 import { Input, Select, SelectItem, TextArea } from '@app/components/form'
 import * as FileInput from '@app/components/form/FileInput'
-import {
-  Bold,
-  Italic,
-  Link,
-  List,
-  ListOrdered,
-  LogOut,
-  Mail,
-} from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import { ChangeEvent } from 'react'
 
 export default function Home() {
