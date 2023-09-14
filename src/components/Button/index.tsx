@@ -10,7 +10,7 @@ const button = tv({
   variants: {
     variant: {
       primary: 'bg-violet-600 text-white hover:bg-violet-700',
-      ghost: 'rounded-md px-2 shadow-none hover:bg-zinc-50',
+      ghost: 'rounded-md px-2 shadow-none hover:bg-zinc-50 text-zinc-500',
       outline: 'border border-zinc-300 text-violet-700 hover:bg-zinc-50',
     },
   },
@@ -21,8 +21,8 @@ const button = tv({
 
 type ButtonProps = ComponentProps<'button'> & VariantProps<typeof button>
 
-function Button({ variant, ...props }: ButtonProps) {
-  return <button className={button({ variant })} {...props} />
+function Button({ variant, className, ...props }: ButtonProps) {
+  return <button className={button({ variant, className })} {...props} />
 }
 
 export { Button, type ButtonProps }
